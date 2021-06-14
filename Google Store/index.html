@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Google Store for Google Made Devices & Accessories</title>
+   <style>
+      @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Material Icons Extended';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/materialiconsextended/v87/kJEjBvgX7BgnkSrUwT8UnLVc38YydejYY-oE_LvJHMXBBA.woff2)format('woff2');}.material-icons-extended{font-family:'Material Icons Extended';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}@font-face{font-family:'Product Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/productsans/v9/pxiDypQkot1TnFhsFMOfGShVGdeOYktMqlap.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Product Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/productsans/v9/pxiDypQkot1TnFhsFMOfGShVF9eOYktMqg.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Kwp5eKQtGBlc.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Nwp5eKQtGBlc.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Bwp5eKQtGBlc.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Awp5eKQtGBlc.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp5eKQtG.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94Yt3CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94YtwCwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94Yt8CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94Yt9CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94YtzCwZsPF4o.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154t3CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154twCwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154t8CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154t9CwZsPF4oxIs.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Google Sans';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLV154tzCwZsPF4o.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+   </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+      <svg viewBox="0 0 867 155" class="logo"><g><g fill="#5F6368"><path d="M865.7 108c-2.4 4.3-5.8 8-9.9 10.7-4.3 2.9-9.5 4.3-15.8 4.3-3.9 0-7.8-.7-11.4-2.2-3.4-1.4-6.5-3.5-9.1-6.1-2.6-2.7-4.6-5.8-6-9.3-2.8-7.4-2.9-15.6-.1-23.1 1.3-3.4 3.2-6.6 5.7-9.3 2.5-2.7 5.5-4.9 8.8-6.4 3.6-1.6 7.5-2.4 11.5-2.4 3.9-.1 7.8.7 11.4 2.1 3.2 1.4 6.1 3.4 8.5 6 2.4 2.7 4.2 5.8 5.3 9.2 1.3 3.8 1.9 7.8 1.7 11.8 0 1-.1 2-.2 2.9h-42.3c.2 2.4.8 4.7 1.9 6.9 1 1.8 2.3 3.5 3.9 4.8 1.5 1.3 3.3 2.2 5.1 2.8 1.8.6 3.6.9 5.5.9 3.2.1 6.3-.8 8.9-2.6 2.3-1.7 4.3-3.9 5.7-6.4l10.9 5.4zm-11.6-21.3c-.2-1.3-.6-2.6-1.1-3.8-.6-1.4-1.5-2.7-2.6-3.8-1.3-1.3-2.8-2.3-4.5-3-2.1-.9-4.4-1.3-6.7-1.2-3.4-.1-6.7 1.1-9.3 3.2-2.6 2.2-4.5 5.2-5.2 8.6h29.4zM670.7 76.9h-9.6V66h9.6V49.3H683V66h13.4v10.9H683v24.9c0 1.3.1 2.5.4 3.8.2 1 .7 2 1.3 2.9 1.2 1.4 2.9 2.2 4.8 2.2.9 0 1.9-.1 2.8-.3.7-.2 1.4-.5 2.1-.8l3.8 10.9c-1.6.6-3.2 1.1-4.9 1.4-1.9.4-3.8.5-5.8.5-2.4 0-4.7-.4-6.9-1.2-1.9-.8-3.7-1.9-5.2-3.4-3.2-3.2-4.8-7.7-4.8-13.3l.1-27.6zM732.1 64.2c3.9 0 7.8.7 11.4 2.2 3.4 1.4 6.4 3.4 9 6.1 2.6 2.7 4.6 5.8 5.9 9.2 2.8 7.4 2.8 15.7 0 23.1-1.3 3.4-3.3 6.6-5.9 9.2-2.6 2.6-5.6 4.7-9 6.1-7.4 2.9-15.5 2.9-22.9 0-3.4-1.4-6.4-3.4-9-6.1-2.6-2.7-4.6-5.8-5.9-9.2-2.8-7.4-2.8-15.7 0-23.1 1.3-3.4 3.3-6.6 5.9-9.2 2.6-2.6 5.6-4.7 9-6.1 3.7-1.5 7.6-2.2 11.5-2.2zm0 46.6c2.1 0 4.1-.4 6-1.2 1.9-.8 3.7-2 5.2-3.4 1.6-1.6 2.8-3.4 3.6-5.5 1.8-4.8 1.8-10 0-14.8-.8-2.1-2-3.9-3.6-5.5-1.5-1.5-3.2-2.6-5.2-3.4a15.6 15.6 0 00-12 0c-1.9.8-3.7 2-5.2 3.4-1.6 1.6-2.8 3.4-3.6 5.5-1.8 4.8-1.8 10 0 14.8.8 2.1 2 3.9 3.6 5.5 1.5 1.5 3.2 2.6 5.2 3.4 1.9.7 3.9 1.2 6 1.2zM771.7 66h11.8v8.3h.7c.7-1.5 1.6-2.8 2.8-4 1.2-1.2 2.5-2.3 3.9-3.2 1.5-.9 3-1.6 4.6-2.1 1.5-.5 3.1-.8 4.7-.8s3.1.1 4.6.5c1.3.4 2.5.9 3.7 1.5l-4.1 11.1c-.8-.3-1.6-.5-2.4-.7-1.2-.2-2.4-.3-3.7-.3-1.9 0-3.8.4-5.6 1.2-1.7.8-3.2 2-4.4 3.4-1.3 1.5-2.3 3.2-3 5.1-.7 2-1.1 4.1-1.1 6.2v28.2h-12.5V66zM609.5 116.2c2.7 2 5.8 3.5 9 4.5 6.5 2 13.5 2 20.1.1 3.4-.9 6.5-2.5 9.3-4.5 2.8-2.1 5.1-4.8 6.8-7.8 1.9-3.5 2.8-7.4 2.7-11.4.1-3.3-.5-6.6-1.7-9.7-1.1-2.7-2.8-5.2-4.8-7.3-2.1-2.2-4.6-4-7.3-5.4-3-1.6-6.1-2.9-9.3-4l-5.5-2c-4.1-1.3-7.9-3.1-11.4-5.5-2.6-1.8-4.1-4.8-4.1-8 0-1.6.4-3.2 1.2-4.5.8-1.4 1.9-2.6 3.1-3.6 1.4-1.1 3-1.9 4.6-2.3 1.8-.6 3.7-.8 5.7-.8s4.1.3 6 1c1.6.6 3.1 1.5 4.5 2.5 1.2 1 2.3 2.2 3.1 3.5.6 1 1.2 2.1 1.6 3.2l11.4-4.8c-.7-1.9-1.7-3.7-2.7-5.4-1.4-2.2-3.1-4.1-5.2-5.8-2.4-1.9-5.1-3.4-7.9-4.4-3.5-1.2-7.2-1.8-11-1.7-3.7 0-7.4.6-10.9 1.9-3.1 1.1-6 2.9-8.5 5.1-2.3 2.1-4.2 4.6-5.5 7.4-1.3 2.8-2 5.9-2 9-.1 3.1.6 6.1 1.8 8.9 1.2 2.5 2.8 4.7 4.8 6.6 2 1.9 4.2 3.5 6.6 4.8 2.3 1.3 4.7 2.3 7.2 3.2l5.5 2c2.8 1 5.5 2.1 8.2 3.4 2 .9 3.9 2.1 5.6 3.6 1.4 1.2 2.4 2.6 3.2 4.2.7 1.6 1 3.4 1 5.1 0 2-.4 3.9-1.4 5.6-.9 1.6-2.1 3-3.5 4.1-1.5 1.1-3.2 2-5.1 2.5-2 .5-4 .8-6 .8-2.4 0-4.7-.4-6.9-1.3-2-.9-3.9-2.1-5.5-3.6-1.7-1.5-3.1-3.3-4.1-5.3-1-1.9-1.8-3.8-2.4-5.9L597.6 99c1 3.5 2.6 6.8 4.6 9.8 2 2.9 4.5 5.4 7.3 7.4z"></path></g><g fill="#5F6368"><path d="M242.7 122.2c-24.8 0-45.7-20.2-45.7-45s20.9-45 45.7-45c11.5-.2 22.6 4.3 30.8 12.4l-8.7 8.7c-5.9-5.7-13.9-8.9-22.2-8.8-18.1 0-32.3 14.6-32.3 32.7s14.2 32.7 32.3 32.7c11.7 0 18.4-4.7 22.7-9 3.5-3.5 5.8-8.6 6.7-15.5h-29.4V73.2H284c.5 2.5.7 5.1.7 7.7 0 9.2-2.5 20.6-10.6 28.8-7.9 8.1-18 12.5-31.4 12.5zM350.2 93.2c.1 15.9-12.8 28.9-28.7 29-15.9.1-28.9-12.8-29-28.7v-.3c-.1-15.9 12.8-28.9 28.7-29 15.9-.1 28.9 12.8 29 28.7v.3zm-12.6 0c0-10.4-7.5-17.6-16.2-17.6s-16.2 7.1-16.2 17.6c0 10.3 7.5 17.6 16.2 17.6s16.2-7.2 16.2-17.6zM414.2 93.2c.1 15.9-12.8 28.9-28.7 29-15.9.1-28.9-12.8-29-28.7v-.3c-.1-15.9 12.8-28.9 28.7-29 15.9-.1 28.9 12.8 29 28.7v.3zm-12.6 0c0-10.4-7.5-17.6-16.2-17.6s-16.2 7.1-16.2 17.6c0 10.3 7.5 17.6 16.2 17.6s16.2-7.2 16.2-17.6zM476.9 66v52c0 21.4-12.6 30.2-27.6 30.2-11.2.1-21.4-6.7-25.7-17.1l11.1-4.6c2 4.7 6.8 10.3 14.6 10.3 9.6 0 15.5-5.9 15.5-17v-4.2h-.4c-2.9 3.5-8.3 6.6-15.3 6.6-14.5 0-27.8-12.6-27.8-28.9 0-16.4 13.3-29.1 27.8-29.1 6.9 0 12.4 3.1 15.3 6.5h.4V66h12.1zm-11.2 27.3c0-10.2-6.8-17.7-15.5-17.7-8.8 0-16.1 7.5-16.1 17.7 0 10.1 7.4 17.4 16.1 17.4 8.7.1 15.5-7.3 15.5-17.4zM502.5 35.3v85.2h-12.7V35.3h12.7zM556.7 102.8l9.9 6.6c-5.4 8.1-14.5 12.9-24.1 12.8-16.5 0-28.8-12.7-28.8-29 0-17.2 12.4-29 27.3-29 15 0 22.4 12 24.8 18.4l1.3 3.3-38.7 16c3 5.8 7.6 8.8 14 8.8s11-3.1 14.3-7.9zm-30.4-10.4l25.9-10.8c-1.4-3.6-5.7-6.1-10.8-6.1-6.5 0-15.5 5.7-15.1 16.9z"></path></g><path d="M154.5 79c.1-5.3-.5-10.6-1.7-15.8h-74v28.6h43.4c-.9 7.2-5.6 17.8-16.1 25v18.9H131c14.8-13.4 23.5-33.2 23.5-56.7z" fill="#4285F4"></path><path d="M78.8 154.5c21.3 0 39.1-6.9 52.2-18.7l-24.9-18.9c-6.6 4.6-15.6 7.8-27.3 7.8-20.3 0-38.3-12.9-44.9-32.1H8.4V112c13.7 26.1 40.8 42.6 70.4 42.5z" fill="#34A853"></path><path d="M33.9 92.5c-3.4-9.9-3.4-20.6 0-30.5V42.6H8.4a75.07 75.07 0 000 69.3l25.5-19.4z" fill="#FBBC04"></path><path d="M78.8 29.9c14.8 0 24.7 6.3 30.4 11.5l22.3-21.2C117.9 7.7 100.1 0 78.8 0 49.2-.1 22.1 16.3 8.4 42.6L33.9 62c6.6-19.2 24.6-32.1 44.9-32.1z" fill="#EA4335"></path></g></svg>
+      <a href="#">Pixel</a>
+      <a href="#">Nest</a>
+      <a href="#">Stadia</a>
+      <a href="#">Fitbit</a>
+      <a href="#">Pixelbook</a>
+      <a href="#">Subscriptions</a>
+      <a href="#">Special Offers</a>
+      <div class="utilities">
+         <span class="material-icons">search</span>
+         <span class="material-icons">help</span>
+         <span class="material-icons">shopping_cart</span>
+         <img src="img/avatar.jpg" alt="Avatar">
+      </div>
+   </nav>
+   <header>
+      <div>
+         <h5>Meet the new Nest Hub</h5>
+         <h1>The center of <span class="green">your helpful home.</span></h1>
+         <a href="#" class="outlined-btn">Learn more</a>
+      </div>
+      <div>
+         <img src="img/mounted_tablet.webp" alt="Mounted tablet">
+      </div>
+   </header>
+   <section class="product-carousel">
+      <div>
+         <img src="img/pixel5.webp" alt="Pixel 5">
+         <h5>Pixel 5</h5>
+      </div>
+      <div>
+         <img src="img/pixel4.webp" alt="Pixel 4a with 5G">
+         <h5>Pixel 4a with 5G</h5>
+      </div>
+      <div>
+         <img src="img/nest_audio2.webp" alt="Nest Audio">
+         <h5>Nest Audio</h5>
+      </div>
+      <div>
+         <img src="img/chromecast_with_google_tv.webp" alt="Chromecast with Google TV">
+         <h5>Chromecast with Google TV</h5>
+      </div>
+      <div>
+         <img src="img/nest_thermostat2.webp" alt="Nest Thermostat">
+         <h5>Nest Thermostat</h5>
+      </div>
+      <div>
+         <img src="img/fitbit_versa_3.png" alt="Fitbit Versa 3">
+         <h5>Fitbit Versa 3</h5>
+      </div>
+      <div>
+         <img src="img/pixel_buds.webp" alt="Pixel Buds">
+         <h5>Pixel Buds</h5>
+      </div>
+   </section>
+   <section class="product-grid">
+      <div class="product-grid-item item1">
+         <h5>Explore Pixel phones</h5>
+         <h1>Capture the details. <span class="blue">Capture your world.</span></h1>
+         <a href="#" class="outlined-btn">Learn more</a>
+         <img src="img/pixel_phones.webp" alt="Pixel phones">
+      </div>
+      <div class="product-grid-item item2">
+         <h5>Nest Audio</h5>
+         <h1><span class="green">Amazing sound.</span> At your command.</h1>
+         <a href="#" class="outlined-btn">Learn more</a>
+         <img src="img/nest_audio.webp" alt="Nest Audio">
+      </div>
+      <div class="product-grid-item item3">
+         <h5>Nest Audio Entertainment packages</h5>
+         <h2><span class="orange">Built for music.</span> Made for you.</h2>
+         <a href="#" class="outlined-btn">Learn more</a>
+         <img src="img/nest_audio_enterainment_packages.webp" alt="Nest Audio Entertainment packages">
+      </div>
+      <div class="product-grid-item item4">
+         <h5>Nest Video Entertainment packages</h5>
+         <h2>So much to watch. <span class="blue">So easy to find.</span></h2>
+         <a href="#" class="outlined-btn">Learn more</a>
+         <img src="img/nest_video_entertainment_packages.webp" alt="Nest Video Entertainment packages">
+      </div>
+      <div class="product-grid-item item5">
+         <h5>Nest Home Security packages</h5>
+         <h2>Your home, <span class="red">safe and sound.</span></h2>
+         <a href="#" class="outlined-btn">Learn more</a>
+         <img src="img/nest_home_security_packages.webp" alt="Nest Home Security packages">
+      </div>
+   </section>
+   <section class="nest-thermostat">
+      <div>
+         <h4>Nest Thermostat</h4>
+         <h1>Helpful thermostat.<br><span class="green">Cozy price.</span></h1>
+         <a href="#" class="outlined-btn">Learn more</a>
+      </div>
+      <div>
+         <img src="img/nest_thermostat.jpg" alt="Nest Thermostat">
+      </div>
+   </section>
+   <section class="wifi">
+      <div>
+         <video src="media/wifi.mp4"></video>
+      </div>
+      <div>
+         <h4>Explore Wi-Fi systems</h4>
+         <h1>Get Wi-Fi <span class="blue">that just<br>works.</span></h1>
+         <a href="#" class="outlined-btn">Learn more</a>
+      </div>
+   </section>
+   <section class="fitbit">
+      <div>
+         <img src="img/fitbit.svg" class="fitbit-logo" alt="Fitbit">
+         <h1><span class="bluegreen">Meet Fitbit.</span> Now a member of the Google family.</h1>
+         <a href="#" class="outlined-btn">Explore</a>
+      </div>
+      <div>
+         <img src="img/fitbit_watches.webp"  alt="Fitbit">
+      </div>
+   </section>
+   <section class="black-communities">
+      <h3>Google is commited to advancing racial equity for Black communities.</h3>
+      <a href="#">See how.</a>
+   </section>
+   <section class="subscribe">
+      <img src="img/G.png" alt="G">
+      <h2>Keep me updated about devices, news, tips, and offers from the Google Store.</h2>
+      <a href="#" class="outlined-btn">Sign up</a>
+   </section>
+   <section class="fine-print">
+      <p>Compared to MSRP of unlocked Pixel 5 phone on the Google Store in the U.S</p>
+      <p>Eligible Chromecast with Google TV purchases on the Google Store between 09/30/2020 and 12/31/2021 include 6 months of the Netflix Standard Streaming Plan 2-screen plan (total current value $83.94). Offer applies only to the following SKUs while supplies last and subject to availability: GA02764-US, GA02765-US, GA02766-US. Limit 3 per customer / Google Account. If you return the device within the allowable return period and have already redeemed the Netflix offer, you will be refunded $49.99 USD (cost of the Chromecast device). If you return the device within the allowable return period and have not redeemed the Netflix offer, you will be refunded the entire amount charged. To redeem Netflix offer, customers must set up an eligible Chromecast with Google TV device and follow instructions to apply offer value to a Netflix account by 03/01/2022. Available to new and existing Netflix subscribers. Not redeemable or refundable for cash, and cannot be exchanged. Offer value may be applied to a different Netflix streaming plan under the same account; exchanges in this manner may alter the duration of the offer. Netflix price plans subject to change and the duration of the offer value may be prorated accordingly. A Netflix compatible device (manufactured and sold separately) and broadband Internet connection are required to watch instantly. See <a href="#">www.netflix.com/termsofuse</a>. Visit <a href="#">g.co/cast/netflixhelp</a> for more information on redeeming your Netflix offer. Offer subject to applicable law and void where prohibited.</p>
+      <p>Home size, materials and layout can affect how a Wi-Fi signal travels. Larger homes or homes with thicker walls or long, narrow layouts may need extra Wifi points for full coverage. The strength and speed of the signal will depend on your Internet provider.</p>
+      <p>Nest Audio requires a Wi-Fi network, a nearby electrical outlet, a Google Account, and a compatible mobile device. See <a href="#">g.co/home/req</a> for details.</p>
+      <p>Requires a 5G data plan (sold separately). 5G service and roaming not available on all carrier networks or in all areas and may vary by country. Contact carrier for details. 5G service, speed and performance depend on many factors including, but not limited to, carrier network capabilities, device configuration and capabilities, network traffic, location, signal strength and signal obstruction. Actual results may vary. Some features not available in all areas. Data rates may apply. See <a href="#">g.co/pixel/networkinfo</a> for info.</p>
+      <p>Trade-in values vary based on condition, year, and configuration of your trade-in device, and are subject to change upon inspection. Credit card refund only available if a Pixel phone is purchased on that card. Phone trade-in value depends on the eligibility of the phone traded in. Phone trade-in credit will be issued as a refund back on the credit card used for the phone purchase at Google Store or in the form of Store Credit if the purchased phone has already been returned. Refund is based on (and paid after) phone received matching the description provided at time of estimate and will be issued to form of payment used for order. Phones sent for trade-in must be received within 30 days of initiation of trade-in process, provided the purchased device has not been returned during that time. Additional trade-in terms are located here: <a href="#">https://store.google.com/intl/en-US_us/about/device-terms.html</a>. Additional store credit terms are located here: <a href="#">https://store.google.com/intl/en-US_us/about/device-terms.html</a>.</p>
+   </section>
+   <section class="bottom-links">
+      <ul>
+         <li><a href="#">Placing an order</a></li>
+         <li><a href="#">Shipping options</a></li>
+         <li><a href="#">Tracking a package</a></li>
+         <li><a href="#">Country availability</a></li>
+         <li><a href="#">Repairs</a></li>
+         <li><a href="#">Installation</a></li>
+         <li><a href="#">Nest Legal</a></li>
+         <li><a href="#">Nest Privacy</a></li>
+      </ul>
+      <ul>
+         <li><a href="#">Financing</a></li>
+         <li><a href="#">Device recycling</a></li>
+         <li><a href="#">Sustainability</a></li>
+         <li><a href="#">Gift returns</a></li>
+         <li><a href="#">Refurbished</a></li>
+         <li><a href="#">Trade-in</a></li>
+         <li><a href="#">Pixel for business</a></li>
+      </ul>
+   </section>
+   <footer>
+      <div class="social">
+         <i class="fab fa-twitter"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-facebook-square"></i>
+         <i class="fab fa-youtube"></i>
+      </div>
+      <div>
+         <img src="img/american_flag.png" alt="American flag">
+         <a href="#">United States</a>
+         <a href="#">Privacy</a>
+         <a href="#">Google Nest Commitment to Privacy</a>
+         <a href="#">Sales Terms</a>
+         <a href="#">Terms of Service</a>
+         <a href="#">Careers</a>
+      </div>
+   </footer>
+</body>
+</html>
