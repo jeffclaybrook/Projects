@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Introducing Material Design Guidance for Large Screens - Material Design</title>
+   <link href="images/favicon.ico" rel="shortcut icon">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://material.io/static/assets/roboto-flex.ttf">
+   <link rel="stylesheet" href="font.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+      <a href="#" class="icon"><img src="images/favicon.ico" alt="Material Design icon"></a>
+      <a href="#">Design</a>
+      <a href="#">Components</a>
+      <a href="#">Develop</a>
+      <a href="#">Resources</a>
+      <a href="#">Blog</a>
+      <a href="#"><span class="material-icons">search</span></a>
+   </nav>
+   <aside class="blm">
+      <p>Google is committed to advancing racial equity for Black communities. <a href="#">See how</a>.</p>
+   </aside>
+   <main>
+      <header>
+         <h6>05.14.21</h6>
+         <h1>Introducing Material Design Guidance for Large Screens</h1>
+         <div class="wrapper">
+            <div class="col">
+               <h2>Designing and building for more devices</h2>
+               <div class="author">
+                  <img src="images/liam_spradlim.jpg" class="avatar" alt="Liam Spradlin, Material Design Advocate">
+                  <h4><strong>Liam Spradlin</strong>, Material Design Advocate</h4>
+               </div>
+            </div>
+            <div class="chips">
+               <div class="chip"><span class="google-material-icons">post_twitter</span>Tweet</div>
+               <div class="chip"><span class="google-material-icons">post_linkedin</span>Link</div>
+               <div class="chip"><span class="google-material-icons">post_facebook</span>Post</div>
+            </div>
+         </div>
+      </header>
+      <article>
+         <figure>
+            <img src="images/hero.png" alt="Illustration by Simone Noronha">
+            <figcaption>Illustration by Simone Noronha</figcaption>
+         </figure>
+         <section>
+            <p>Material Design has always been built to be adaptable. With today’s updates, Material Design is expanding its adaptive capabilities to help prepare your apps for all form factors, from phones to tablets, desktops, and beyond. Updated guidance and component behaviors will help your app scale and adapt, while maintaining consistent layouts using components optimized for each device.</p>
+            <p>As a system capability, layout and component responsiveness are now baked into our Material guidelines. Our layout guidance, along with components and their design documentation, have all been updated to describe a method of creating interfaces that can adapt to changes in screen size and shape.</p>
+            <p>Keep reading to see exactly what’s new, and stay tuned for our session at I/O: <a href="#"><em>5 things you can do to prepare your app for large screens.</em></a></p>
+         </section>
+         <figure>
+            <img src="images/fortnightly.png" alt="New layout guidance defines responsive grid composition and behavior">
+            <figcaption>New layout guidance defines responsive grid composition and behavior</figcaption>
+         </figure>
+         <section>
+            <h3>New layout guidance</h3>
+            <aside>
+               <h4><strong>Understanding Layout</strong></h4>
+               <p>The <a href="#"><em>Understanding layout</em></a> article has been updated with new sections on Layout Anatomy and Composition.</p>
+               <ul>
+                  <li><strong>Layout Anatomy</strong> outlines the three primary containers that make up app layouts in Material: body, navigation, and app bars. These containers form a framework for thinking about interfaces that scale across screen types and sizes. This section of the article describes each container and its baseline constraints and behaviors. This section also gives a brief introduction to Material’s responsive layout grid as it relates to the body container.</li>
+                  <li><strong>Composition</strong> provides guidance on composing information and components within a layout. As an app scales to larger screens, there’s more space available to display content and actions, making careful composition crucial to helping users perceive the additional information. This section of the article provides some techniques for creating a readable information hierarchy so users can understand and use your app faster.</li>
+                  <li>A new <strong>Resources</strong> section points to our Material Design Community page on Figma for the latest downloads, including sample layout grid frames.</li>
+               </ul>
+            </aside>
+            <aside>
+               <h4><strong>Responsive layout grid</strong></h4>
+               <p>The <a href="#"><em>Responsive layout grid</em></a> article has been updated with a streamlined breakpoint system and new guidance on grid behavior.</p>
+               <ul>
+                  <li><strong>Breakpoints</strong> have been streamlined to cover devices from small to large, from phones to desktop screens and beyond. The updated table also provides guidance on body container sizes, margins, and column counts to provide specific references across device types and sizes.</li>
+                  <li><strong>Layout anatomy</strong> introduces the concept of layout regions described in depth in the Understanding Layout article, as they pertain to the responsive column grid.</li>
+               </ul>
+            </aside>
+            <aside>
+               <h4><strong>Component behavior</strong></h4>
+               <p>The <a href="#"><em>Component behavior</em></a> article includes new terminology to keep your layouts bidirectional, as well as a section describing new adaptive behaviors.</p>
+               <ul>
+                  <li><strong>Positioning Terminology</strong> now includes definitions for “leading edge” and “trailing edge,” allowing for discussion of bidirectional layout configurations. For example, the “leading edge,” where the content of the layout begins, is on the left in LTR languages, while in an RTL language it would be on the right.</li>
+                  <li><strong>Component width</strong> has been replaced by a <strong>Component adaptation</strong> section, which outlines general scaling, orientation, and swapping behavior for components as your layout scales across devices and screen sizes. This section also includes a handy reference for swappable component types.</li>
+                  <li>The <strong>overlay</strong> behaviors has been moved to the <a href="#"><em>Understanding layout</em></a> article, as a distinct layout response.</li>
+                  <li>The <strong>push</strong> behavior has been removed, to focus on preserving the context of the body region as a navigation component enters the screen.</li>
+               </ul>
+            </aside>
+         </section>
+         <figure>
+            <img src="images/component_behavior.png" alt="Component updates define new scaling and adaptation behaviors for individual Material components">
+            <figcaption>Component updates define new scaling and adaptation behaviors for individual Material components.</figcaption>
+         </figure>
+         <section>
+            <h3>Component Updates</h3>
+            <p>Complementing updated layout guidance, components have been updated as well, providing more specific direction on how Material Design Components can be used in experiences that adapt across devices and screen sizes.</p>
+            <aside>
+               <h4><strong>Design guidance</strong></h4>
+               <p>Individual component articles have been updated with a <em>scaling & adaptation</em> section under <strong>behavior</strong>. This section details unique scaling considerations not covered in the <a href="#"><em>Component behavior</em></a> article, and can answer questions about specific default adaptative behaviors. Components that have been updated include:</p>
+               <ul>
+                  <li><a href="#">App bars (top)</a></li>
+                  <li><a href="#">Bottom navigation</a></li>
+                  <li><a href="#">Buttons</a></li>
+                  <li><a href="#">Cards</a> (<em>Implicit</em> and <em>explicit containment</em> subsections have also been added under <em>anatomy</em>.)</li>
+                  <li><a href="#">Dialogs</a></li>
+                  <li><a href="#">Image lists</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Menus</a></li>
+                  <li><a href="#">Navigation drawers</a></li>
+                  <li><a href="#">Bottom sheets</a></li>
+                  <li><a href="#">Side sheets</a></li>
+                  <li><a href="#">Snackbars</a></li>
+                  <li><a href="#">Tabs</a></li>
+                  <li><a href="#">Text fields</a></li>
+               </ul>
+            </aside>
+            <aside>
+               <h4><strong>Code updates</strong></h4>
+               <p>Navigation rail</p>
+               <p>The navigation rail is currently available on the following platforms:</p>
+               <ul>
+                  <li><a href="#">Android</a> (in the 1.4.0-beta release)</li>
+                  <li><a href="#">Flutter</a></li>
+               </ul>
+               <p>For more component updates, check out <a href="#"><em>What's New in Foldables, Tablets, and Large Screens</em></a> at I/O.</p>
+            </aside>
+         </section>
+         <section>
+            <h3>Resources</h3>
+            <p>The <strong>Material Baseline Design Kit for Figma</strong> has also been updated, adding a series of sample layout grids as components.</p>
+            <p>To see layout grids that account for newly revised breakpoint, margin, and column behaviors, grab a template for your desired screen size from the <em>Assets</em> panel and toggle <em>Show Layout Grids</em> from the <em>View</em> menu in Figma. The <em>Layout regions</em> property can be toggled in the <em>Design</em> panel to reveal navigation regions and app bars.</p>
+            <p>Additionally, a bug affecting color mapping on the <em>Material Theme</em> page has been resolved, and we have more updates planned to make full use of Figma's capabilities.</p>
+            <p>Grab the Design Kit from the <a href="#">Material Design Figma Community Page</a>.</p>
+         </section>
+         <section>
+            <h3>How to get started</h3>
+            <p>Ready to become a pro at adapting to large screens and prepare your app to run on all types of devices? Stay tuned for our talk, <a href="#"><em>5 things you can do to prepare your app for large screens</em></a>, and the accompanying blog post, going live during Google I/O 2021.</p>
+            <p>In the meantime, check out the resources linked below and reach out to us with questions any time with #AskMaterial <a href="#">@MaterialDesign on Twitter</a>.</p>
+            <div class="author">
+               <img src="images/liam_spradlim.jpg" alt="Liam Spradlin, Material Design Advocate">
+               <p><strong>Liam Spradlin</strong>, Material Design Advocate</p>
+            </div>
+         </section>
+         <section>
+            <h3>Up next</h3>
+            <div class="card-deck">
+               <div class="card">
+                  <img src="images/understanding_layout.png" alt="Understanding Layout">
+                  <div class="card-body">
+                     <h5>Layout</h5>
+                     <h4>Understanding Layout</h4>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="images/figma.png" alt="Figma Baselines Design Kit">
+                  <div class="card-body">
+                     <h5>Resources</h5>
+                     <h4>Figma Baselines Design Kit</h4>
+                  </div>
+               </div>
+               <div class="card">
+                  <img src="images/develop.png" alt="Develop with Material">
+                  <div class="card-body">
+                     <h5>Develop</h5>
+                     <h4>Develop with Material</h4>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </article>
+   </main>
+   <footer>
+      <div class="footer-top">
+         <div class="wrapper">
+            <img src="images/favicon_outlined.svg" alt="Material Design icon">
+            <div class="col">
+               <p>Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design. Backed by open-source code, Material streamlines collaboration between designers and developers, and helps teams quickly build beautiful products.</p>
+               <ul>
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">YouTube</a></li>
+                  <li><a href="#">Blog RSS</a></li>
+                  <li><a href="#">Subscribe for updates</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="wrapper">
+            <img src="images/google_logo.svg" alt="Google logo">
+            <ul>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Terms of Service</a></li>
+               <li><a href="#">Feedback</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>
