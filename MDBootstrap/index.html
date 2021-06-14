@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MDBootstrap</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Nav -->
+   <nav>
+      <a href="#" class="logo"><img src="images/mdb_logo.png" alt="Material Design Bootstrap logo"></a>
+      <div class="links">
+         <a href="#" class="notifications"><i class="fas fa-bell" alt="notifications"></i></a>
+         <a href="#">Docs</a>
+         <a href="#">Support</a>
+         <a href="#">Blog</a>
+         <a href="#">Playground</a>
+         <a href="#">Free Hosting</a>
+         <a href="#"><i class="fab fa-github" alt="GitHub"></i></a>
+         <a href="#"><img src="images/avatar.jpeg" alt="User avatar"></a>
+      </div>
+   </nav>
+
+   <!-- Header -->
+   <header>
+      <div class="container">
+         <div class="row middle-md">
+            <div class="col-md-6">
+               <h1>Material Design <span>for Bootstrap 5 &#38; Vanilla JavaScript</span></h1>
+               <p>Standard Bootstrap version built with play JS (but works also with JQuery)</p>
+               <ul>
+                  <li><i class="fas fa-check"></i>700&plus; UI Components &#38; templates</li>
+                  <li><i class="fas fa-check"></i>Built with plain, vanilla JavaScript</li>
+                  <li><i class="fas fa-check"></i>Super simple, 1 minute installation</li>
+                  <li><i class="fas fa-check"></i>Free hosting</li>
+                  <li><i class="fas fa-check"></i>MIT license - free for personal &#38; commercial use</li>
+               </ul>
+               <a href="#" class="filled-btn">Get Started</a>
+               <a href="#" class="outlined-btn">Demo</a>
+               <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+               <a href="#" class="code-btn">npm i mdb-ui-kit</a>
+            </div>
+            <div class="col-md-6">
+               <video src="media/quick_start.mp4"></video>
+            </div>
+         </div>
+         <div class="row center-md">
+            <div class="col-md-12">
+               <p class="caption">Trusted <strong>by 2,000,000&plus;</strong> developers and designers</p>
+               <div class="client-logos">
+                  <img src="images/nasa.png" alt="Nasa logo">
+                  <img src="images/amazon.png" alt="Amazon logo">
+                  <img src="images/nike.png" alt="Nike logo">
+                  <img src="images/ikea.png" alt="Ikea logo">
+                  <img src="images/kpmg.png" alt="KPMG logo">
+                  <img src="images/sony.png" alt="Sony logo">
+                  <img src="images/unity.png" alt="Unity logo">
+                  <img src="images/samsung.png" alt="Samsung logo">
+                  <img src="images/airbus.png" alt="Airbus logo">
+                  <img src="images/yahoo.png" alt="Yahoo logo">
+                  <img src="images/deloitte.png" alt="Deloitte logo">
+                  <img src="images/ge.png" alt="GE logo">
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Cards -->
+   <section>
+      <div class="section-header">
+         <h2>Cards</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card">
+                  <h3>Card title</h3>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-btn">Button</a>
+               </div>
+               <div class="card-overlay">
+                  <h3>Card title</h3>
+                  <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                     content is a little bit longer.</p>
+                  <p class="card-subtext">Last updated 3 mins ago</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card-normal">
+                  <div class="card-media">
+                     <img src="images/beach.jpg" alt="Beach thumbnail">
+                  </div>
+                  <div class="card-body">
+                     <h3>Card title</h3>
+                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.
+                     </p>
+                     <a href="#" class="card-btn">Button</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card-sectioned">
+                  <div class="card-header">
+                     <h6>Featured</h6>
+                  </div>
+                  <div class="card-content">
+                     <h3>Special title treatment</h3>
+                     <p>With supporting text below as a natural lead in to additional content.</p>
+                     <a href="#" class="card-btn">Button</a>
+                  </div>
+                  <div class="card-footer">
+                     <p>2 days ago</p>
+                  </div>
+               </div>
+               <div class="card-horizontal">
+                  <div class="card-media">
+                     <img src="images/ripped_jeans.jpg" alt="Ripped jeans">
+                  </div>
+                  <div class="card-content">
+                     <h3>Card title</h3>
+                     <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                     <p class="card-subtext">Last updated 3 mins ago</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Carousel -->
+   <section>
+      <div class="section-header">
+         <h2>Carousel</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <img src="images/desert_sky.jpg" alt="Carousel image">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Buttons -->
+   <section>
+      <div class="section-header">
+         <h2>Buttons</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Input Elements -->
+   <section>
+      <div class="section-header">
+         <h2>Input Elements</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Forms -->
+   <section>
+      <div class="section-header">
+         <h2>Forms</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <form>
+                  <label for="email-address"></label>
+                  <input type="text" id="email-address" placeholder="Email address">
+                  <label for="password"></label>
+                  <input type="password" id="password" placeholder="Password">
+               </form>
+            </div>
+            <div class="col-md-6"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Progress -->
+   <section>
+      <div class="section-header">
+         <h2>Progress</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Spinners -->
+   <section>
+      <div class="section-header">
+         <h2>Spinners</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Alerts -->
+   <section>
+      <div class="section-header">
+         <h2>Alerts</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="alert">
+                  <p>A simple primary alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple secondary alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple success alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple danger alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple warning alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple info alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple light alert - check it out!</p>
+               </div>
+               <div class="alert">
+                  <p>A simple dark alert - check it out!</p>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="alert">
+                  <p><strong>Holy guacamole!</strong> You should check in on some of those fields below.</p>
+               </div>
+               <div class="alert">
+                  <h3>Well done!</h3>
+                  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
+                     bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                  <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Badges -->
+   <section>
+      <div class="section-header">
+         <h2>Badges</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Notes and Typography -->
+   <section>
+      <div class="section-header">
+         <h2>Notes &#38; typography</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <p class="note"><strong>Note primary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note secondary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus
+                  placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note success:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note danger:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note warning:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note info:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+               <p class="note"><strong>Note light:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat
+                  illo rem id nisi consequatur esse, sint perspiciatis soluta porro?</p>
+            </div>
+         </div>
+         <div class="row center-md">
+            <div class="col-md-12">
+               <div class="layout-example">
+                  <div class="layout-example__heading">
+                     <h1>Main website heading (h1)</h1>
+                     <h4>Website subheading (h4)</h4>
+                  </div>
+                  <div class="layout-example__subheading">
+                     <h3>Section heading (h3)</h3>
+                  </div>
+                  <div class="row center-md">
+                     <div class="col-md-4">
+                        <h5>Component heading (h5)</h5>
+                        <h6>Component subheading</h6>
+                        <h6 class="subheading-alt">Component alternative subheading (h6)</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam nisi?
+                           Cupiditate nobis doloremque unde in ut, consequatur reprehenderit saepe iure perspiciatis,
+                           veniam facilis asperiores deleniti at?</p>
+                     </div>
+                     <div class="col-md-4">
+                        <h5>Component heading (h5)</h5>
+                        <h6>Component subheading</h6>
+                        <h6 class="subheading-alt">Component alternative subheading (h6)</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam nisi?
+                           Cupiditate nobis doloremque unde in ut, consequatur reprehenderit saepe iure perspiciatis,
+                           veniam facilis asperiores deleniti at?</p>
+                     </div>
+                     <div class="col-md-4">
+                        <h5>Component heading (h5)</h5>
+                        <h6>Component subheading</h6>
+                        <h6 class="subheading-alt">Component alternative subheading (h6)</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nemo commodi odio veniam nisi?
+                           Cupiditate nobis doloremque unde in ut, consequatur reprehenderit saepe iure perspiciatis,
+                           veniam facilis asperiores deleniti at?</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Button group -->
+   <section>
+      <div class="section-header">
+         <h2>Button group</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Collapse -->
+   <section>
+      <div class="section-header">
+         <h2>Collapse</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Dropdowns -->
+   <section>
+      <div class="section-header">
+         <h2>Dropdowns</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Modal -->
+   <section>
+      <div class="section-header">
+         <h2>Modal</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Toasts -->
+   <section>
+      <div class="section-header">
+         <h2>Toasts</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Tooltips -->
+   <section>
+      <div class="section-header">
+         <h2>Tooltips</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Popovers -->
+   <section>
+      <div class="section-header">
+         <h2>Popovers</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Navbars -->
+   <section>
+      <div class="section-header">
+         <h2>Navbars</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Headers -->
+   <section>
+      <div class="section-header">
+         <h2>Headers</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Scrollspy -->
+   <section>
+      <div class="section-header">
+         <h2>Scrollspy</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <section>
+      <div class="section-header">
+         <h2>Footer</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Breadcrumbs -->
+   <section>
+      <div class="section-header">
+         <h2>Breadcrumbs</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Pagination -->
+   <section>
+      <div class="section-header">
+         <h2>Pagination</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Pills -->
+   <section>
+      <div class="section-header">
+         <h2>Pills</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <a href="#" class="pill active" id="pill-example-1" role="tab" aria-controls="pills-1" aria-selected="true">Home</a>
+               <a href="#" class="pill" id="pill-example-2" role="tab" aria-controls="pills-2" aria-selected="false">Profile</a>
+               <a href="#" class="pill" id="pill-example-3" role="tab" aria-controls="pills-3" aria-selected="false">Settings</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Tabs -->
+   <section>
+      <div class="section-header">
+         <h2>Tabs</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Tables -->
+   <section>
+      <div class="section-header">
+         <h2>Tables</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <table class="table table-striped">
+                  <thead>
+                     <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Hover effects -->
+   <section>
+      <div class="section-header">
+         <h2>Hover effects</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Masks -->
+   <section>
+      <div class="section-header">
+         <h2>Masks</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Shadows -->
+   <section>
+      <div class="section-header">
+         <h2>Shadows</h2>
+         <a href="#" role="button">Docs &#38; More Examples</a>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+      <div class="footer-column">
+         <h3>Useful Links</h3>
+         <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Return/refund policy</a></li>
+            <li><a href="#">Affiliate program</a></li>
+            <li><a href="#">For resellers</a></li>
+         </ul>
+      </div>
+      <div class="footer-column">
+         <h3>Resources</h3>
+         <ul>
+            <li><a href="#">Support forum</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">MDB playground</a></li>
+            <li><a href="#">MDB LAB</a></li>
+            <li><a href="#">MDB CLI &#38; hosting</a></li>
+            <li><a href="#">Extended documentation</a></li>
+            <li><a href="#">Tailwind components</a></li>
+         </ul>
+      </div>
+      <div class="footer-column">
+         <h3>Technologies</h3>
+         <ul>
+            <li><a href="#">Plain JavaScript</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Angular</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Vue</a></li>
+            <li><a href="#">.NET &plus; ASP.NET</a></li>
+            <li><a href="#">PHP &plus; Laravel</a></li>
+            <li><a href="#">Node.js &plus; Express</a></li>
+         </ul>
+      </div>
+      <div class="footer-column">
+         <h3>Company</h3>
+         <ul>
+            <li><a href="#">Contact &#38; services</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Company data</a></li>
+            <li><a href="#">For media</a></li>
+            <li><a href="#">PMT</a></li>
+         </ul>
+         <ul>
+            <li><a href="#"><i class="fab fa-github"></i>GitHub</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i>YouTube</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+         </ul>
+      </div>
+   </footer>
+</body>
+</html>
