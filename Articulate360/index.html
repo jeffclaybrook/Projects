@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Articulate 360</title>
+   <link rel="shortcut icon" href="images/favicon.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+   <link rel="stylesheet" href="fonts.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+      <a href="#" class="brand"><svg xmlns="http://www.w3.org/2000/svg" width="180" height="30" viewBox="0 0 336 56"><g fill="none" fill-rule="evenodd"><path fill="#4FBDF4" d="M28 0c15.464 0 28 12.536 28 28S43.464 56 28 56 0 43.464 0 28 12.536 0 28 0zm0 11c-9.389 0-17 7.611-17 17s7.611 17 17 17 17-7.611 17-17-7.611-17-17-17z"/><g fill="#000" fill-rule="nonzero"><path d="M211.018 16.071c3.536-.482 6.482-3.535 6.482-7.553 0-4.929-3.59-8.464-9.321-8.464-5.036 0-8.84 3.321-9.75 8.41h1.607c.964-4.285 4.071-6.857 8.143-6.857 4.5 0 7.66 2.84 7.66 6.91 0 4.233-3.268 6.804-7.285 6.804h-2.625v1.5h2.625c4.232 0 7.982 2.625 7.982 7.179s-3.215 7.554-8.143 7.554c-4.607 0-7.768-2.572-8.732-7.179H198c.857 5.41 4.66 8.732 10.393 8.732 6.214 0 9.803-4.125 9.803-9.053 0-4.929-3.482-7.608-7.178-7.983zM231.268 11.464c-2.197 0-4.34.857-5.732 1.929L233.089.214h-1.66l-8.679 15.161c-1.5 2.84-1.982 4.66-1.982 6.75 0 6.054 4.714 10.714 10.5 10.714 5.893 0 10.553-4.66 10.553-10.714 0-6-4.66-10.66-10.553-10.66zm0 19.929c-4.929 0-8.893-3.964-8.893-9.16 0-5.197 3.964-9.215 8.893-9.215 4.982 0 8.946 4.018 8.946 9.214 0 5.197-3.964 9.16-8.946 9.16zM256.286.054c-7.018 0-11.679 6.696-11.679 16.5 0 9.803 4.66 16.5 11.679 16.5 7.018 0 11.678-6.697 11.678-16.5 0-9.804-4.66-16.5-11.678-16.5zm0 31.553c-6.107 0-10.072-6.16-10.072-15s3.965-15 10.072-15c6.107 0 10.071 6.16 10.071 15s-4.018 15-10.071 15zM33.054 12.107l-.483.59V9.75h-4.928v22.821h4.928V20.68c0-4.5 2.572-7.018 7.233-7.072V9.43c-3.054 0-5.25.91-6.75 2.678zM114.696 2.357H119.625V32.518H114.696zM12.214 9.107c-6.857 0-12 5.143-12 12s5.143 12 12 12c4.5 0 7.179-3.16 7.179-3.16v2.517h4.928v-11.41c0-6.804-5.196-11.947-12.107-11.947zm0 19.66c-4.018 0-7.071-3.32-7.071-7.66 0-4.393 3.053-7.714 7.071-7.714 4.072 0 7.179 3.321 7.179 7.714 0 4.393-3.107 7.66-7.179 7.66zM56.518 9.696H61.447V32.517H56.518zM59.09.054c-1.822 0-3.269 1.5-3.269 3.321 0 1.821 1.447 3.268 3.268 3.268 1.822 0 3.322-1.447 3.322-3.268 0-1.821-1.5-3.321-3.322-3.321zM76.071 13.393c2.893 0 5.304 1.607 6.483 4.286h5.142c-1.446-5.197-6-8.572-11.625-8.572-6.857 0-12 5.143-12 12s5.143 12 12 12c5.465 0 9.965-3.214 11.518-8.143h-5.25c-1.232 2.411-3.589 3.857-6.268 3.857-4.017 0-7.071-3.321-7.071-7.66-.054-4.447 3-7.768 7.071-7.768zM173.732 9.107c-6.857 0-12 5.143-12 12s5.143 12 12 12c5.036 0 9.268-2.678 11.09-7.071h-5.518c-1.34 1.768-3.322 2.732-5.625 2.732-3.429 0-6.215-2.41-6.911-6l-.054-.322h19.018c.054-.482.107-.964.107-1.339 0-6.857-5.196-12-12.107-12zm-6.803 9.75l.107-.375c.964-3.16 3.535-5.09 6.696-5.09 3.214 0 5.84 1.93 6.804 5.09l.107.375h-13.714zM122.893 2.357H146.036V6.268000000000001H122.893zM47.679 2.357H42.75V25.18c0 4.714 2.625 7.66 6.857 7.66 1.5 0 3.322-.214 3.964-.268V28.34c-.642.107-2.089.268-3.16.268-1.554 0-2.732-1.34-2.732-3V13.714h5.892V9.696H47.68V2.357zM154.286 2.357h-4.929V25.18c0 4.714 2.625 7.66 6.857 7.66 1.5 0 3.322-.214 3.965-.268V28.34c-.643.107-2.09.268-3.161.268-1.554 0-2.732-1.34-2.732-3V13.714h5.893V9.696h-5.893V2.357zM134.41 9.107c-6.856 0-12 5.143-12 12s5.144 12 12 12c4.5 0 7.18-3.16 7.18-3.16v2.517h4.928v-11.41c0-6.804-5.197-11.947-12.107-11.947zm0 19.66c-4.017 0-7.07-3.32-7.07-7.66 0-4.393 3.053-7.714 7.07-7.714 4.072 0 7.18 3.321 7.18 7.714 0 4.393-3.108 7.66-7.18 7.66zM106.393 20.946c0 5.25-3.054 7.768-6.054 7.768-4.5 0-5.143-3.696-5.143-7.66V9.696h-4.928v12.59c0 5.571 2.893 10.768 9.536 10.768 4.339 0 6.535-3.108 6.535-3.108v2.518h4.929V9.696h-4.929v11.25h.054z" transform="translate(68 9.143)"/></g></g></svg></a>
+      <a href="#">Features</a>
+      <a href="#">Customers</a>
+      <a href="#">Pricing</a>
+      <a href="#">Teams</a>
+      <a href="#">Resources</a>
+      <a href="#" class="cta">Free Trial</a>
+   </nav>
+   <div class="subnav">
+      <a href="#">Overview</a>
+      <a href="#">Storyline 360</a>
+      <a href="#">Rise 360</a>
+      <a href="#">Content Library 360</a>
+      <a href="#">Review 360</a>
+      <a href="#">Articulate 360 Training</a>
+   </div>
+   <header>
+      <div class="col">
+         <h1>Articulate 360</h1>
+         <p>Get everything you need to create e-learning</p>
+         <div class="wrapper">
+            <a href="#" class="filled-btn_white"><span class="icon-play"></span>Play Video</a>
+            <a href="#" class="filled-btn_blue">Start Tour</a>
+         </div>
+      </div>
+      <div class="col">
+         <div class="container">
+            <h2>Start Free Trial</h2>
+            <span>Already have an Articulate ID?<a href="#" class="text-btn">Sign In</a></span>
+            <form>
+               <input type="email" placeholder="Email">
+               <input type="password" placeholder="Password">
+               <input type="text" placeholder="First name">
+               <input type="text" placeholder="Last name">
+               <input type="text" placeholder="Organization">
+               <select id="country" name="country">
+                  <option value="AFG">Afghanistan</option>
+                  <option value="ALA">Åland Islands</option>
+                  <option value="ALB">Albania</option>
+                  <option value="DZA">Algeria</option>
+                  <option value="ASM">American Samoa</option>
+                  <option value="AND">Andorra</option>
+                  <option value="AGO">Angola</option>
+                  <option value="AIA">Anguilla</option>
+                  <option value="ATA">Antarctica</option>
+                  <option value="ATG">Antigua and Barbuda</option>
+                  <option value="ARG">Argentina</option>
+                  <option value="ARM">Armenia</option>
+                  <option value="ABW">Aruba</option>
+                  <option value="AUS">Australia</option>
+                  <option value="AUT">Austria</option>
+                  <option value="AZE">Azerbaijan</option>
+                  <option value="BHS">Bahamas</option>
+                  <option value="BHR">Bahrain</option>
+                  <option value="BGD">Bangladesh</option>
+                  <option value="BRB">Barbados</option>
+                  <option value="BLR">Belarus</option>
+                  <option value="BEL">Belgium</option>
+                  <option value="BLZ">Belize</option>
+                  <option value="BEN">Benin</option>
+                  <option value="BMU">Bermuda</option>
+                  <option value="BTN">Bhutan</option>
+                  <option value="BOL">Bolivia, Plurinational State of</option>
+                  <option value="BES">Bonaire, Sint Eustatius and Saba</option>
+                  <option value="BIH">Bosnia and Herzegovina</option>
+                  <option value="BWA">Botswana</option>
+                  <option value="BVT">Bouvet Island</option>
+                  <option value="BRA">Brazil</option>
+                  <option value="IOT">British Indian Ocean Territory</option>
+                  <option value="BRN">Brunei Darussalam</option>
+                  <option value="BGR">Bulgaria</option>
+                  <option value="BFA">Burkina Faso</option>
+                  <option value="BDI">Burundi</option>
+                  <option value="CPV">Cabo Verde</option>
+                  <option value="KHM">Cambodia</option>
+                  <option value="CMR">Cameroon</option>
+                  <option value="CAN">Canada</option>
+                  <option value="CYM">Cayman Islands</option>
+                  <option value="CAF">Central African Republic</option>
+                  <option value="TCD">Chad</option>
+                  <option value="CHL">Chile</option>
+                  <option value="CHN">China</option>
+                  <option value="CXR">Christmas Island</option>
+                  <option value="CCK">Cocos (Keeling) Islands</option>
+                  <option value="COL">Colombia</option>
+                  <option value="COM">Comoros</option>
+                  <option value="COG">Congo</option>
+                  <option value="COD">Congo, The Democratic Republic of the</option>
+                  <option value="COK">Cook Islands</option>
+                  <option value="CRI">Costa Rica</option>
+                  <option value="CIV">Côte d'Ivoire</option>
+                  <option value="HRV">Croatia</option>
+                  <option value="CUW">Curaçao</option>
+                  <option value="CYP">Cyprus</option>
+                  <option value="CZE">Czechia</option>
+                  <option value="DNK">Denmark</option>
+                  <option value="DJI">Djibouti</option>
+                  <option value="DMA">Dominica</option>
+                  <option value="DOM">Dominican Republic</option>
+                  <option value="ECU">Ecuador</option>
+                  <option value="EGY">Egypt</option>
+                  <option value="SLV">El Salvador</option>
+                  <option value="GNQ">Equatorial Guinea</option>
+                  <option value="ERI">Eritrea</option>
+                  <option value="EST">Estonia</option>
+                  <option value="ETH">Ethiopia</option>
+                  <option value="FLK">Falkland Islands (Malvinas)</option>
+                  <option value="FRO">Faroe Islands</option>
+                  <option value="FJI">Fiji</option>
+                  <option value="FIN">Finland</option>
+                  <option value="FRA">France</option>
+                  <option value="GUF">French Guiana</option>
+                  <option value="PYF">French Polynesia</option>
+                  <option value="ATF">French Southern Territories</option>
+                  <option value="GAB">Gabon</option>
+                  <option value="GMB">Gambia</option>
+                  <option value="GEO">Georgia</option>
+                  <option value="DEU">Germany</option>
+                  <option value="GHA">Ghana</option>
+                  <option value="GIB">Gibraltar</option>
+                  <option value="GRC">Greece</option>
+                  <option value="GRL">Greenland</option>
+                  <option value="GRD">Grenada</option>
+                  <option value="GLP">Guadeloupe</option>
+                  <option value="GUM">Guam</option>
+                  <option value="GTM">Guatemala</option>
+                  <option value="GGY">Guernsey</option>
+                  <option value="GIN">Guinea</option>
+                  <option value="GNB">Guinea-Bissau</option>
+                  <option value="GUY">Guyana</option>
+                  <option value="HTI">Haiti</option>
+                  <option value="HMD">Heard Island and McDonald Islands</option>
+                  <option value="VAT">Holy See (Vatican City State)</option>
+                  <option value="HND">Honduras</option>
+                  <option value="HKG">Hong Kong</option>
+                  <option value="HUN">Hungary</option>
+                  <option value="ISL">Iceland</option>
+                  <option value="IND">India</option>
+                  <option value="IDN">Indonesia</option>
+                  <option value="IRQ">Iraq</option>
+                  <option value="IRL">Ireland</option>
+                  <option value="IMN">Isle of Man</option>
+                  <option value="ISR">Israel</option>
+                  <option value="ITA">Italy</option>
+                  <option value="JAM">Jamaica</option>
+                  <option value="JPN">Japan</option>
+                  <option value="JEY">Jersey</option>
+                  <option value="JOR">Jordan</option>
+                  <option value="KAZ">Kazakhstan</option>
+                  <option value="KEN">Kenya</option>
+                  <option value="KIR">Kiribati</option>
+                  <option value="KOR">Korea, Republic of</option>
+                  <option value="KWT">Kuwait</option>
+                  <option value="KGZ">Kyrgyzstan</option>
+                  <option value="LAO">Lao People's Democratic Republic</option>
+                  <option value="LVA">Latvia</option>
+                  <option value="LBN">Lebanon</option>
+                  <option value="LSO">Lesotho</option>
+                  <option value="LBR">Liberia</option>
+                  <option value="LBY">Libya</option>
+                  <option value="LIE">Liechtenstein</option>
+                  <option value="LTU">Lithuania</option>
+                  <option value="LUX">Luxembourg</option>
+                  <option value="MAC">Macao</option>
+                  <option value="MKD">Macedonia, Republic of</option>
+                  <option value="MDG">Madagascar</option>
+                  <option value="MWI">Malawi</option>
+                  <option value="MYS">Malaysia</option>
+                  <option value="MDV">Maldives</option>
+                  <option value="MLI">Mali</option>
+                  <option value="MLT">Malta</option>
+                  <option value="MHL">Marshall Islands</option>
+                  <option value="MTQ">Martinique</option>
+                  <option value="MRT">Mauritania</option>
+                  <option value="MUS">Mauritius</option>
+                  <option value="MYT">Mayotte</option>
+                  <option value="MEX">Mexico</option>
+                  <option value="FSM">Micronesia, Federated States of</option>
+                  <option value="MDA">Moldova, Republic of</option>
+                  <option value="MCO">Monaco</option>
+                  <option value="MNG">Mongolia</option>
+                  <option value="MNE">Montenegro</option>
+                  <option value="MSR">Montserrat</option>
+                  <option value="MAR">Morocco</option>
+                  <option value="MOZ">Mozambique</option>
+                  <option value="MMR">Myanmar</option>
+                  <option value="NAM">Namibia</option>
+                  <option value="NRU">Nauru</option>
+                  <option value="NPL">Nepal</option>
+                  <option value="NLD">Netherlands</option>
+                  <option value="NCL">New Caledonia</option>
+                  <option value="NZL">New Zealand</option>
+                  <option value="NIC">Nicaragua</option>
+                  <option value="NER">Niger</option>
+                  <option value="NGA">Nigeria</option>
+                  <option value="NIU">Niue</option>
+                  <option value="NFK">Norfolk Island</option>
+                  <option value="MNP">Northern Mariana Islands</option>
+                  <option value="NOR">Norway</option>
+                  <option value="OMN">Oman</option>
+                  <option value="PAK">Pakistan</option>
+                  <option value="PLW">Palau</option>
+                  <option value="PSE">Palestine, State of</option>
+                  <option value="PAN">Panama</option>
+                  <option value="PNG">Papua New Guinea</option>
+                  <option value="PRY">Paraguay</option>
+                  <option value="PER">Peru</option>
+                  <option value="PHL">Philippines</option>
+                  <option value="PCN">Pitcairn</option>
+                  <option value="POL">Poland</option>
+                  <option value="PRT">Portugal</option>
+                  <option value="QAT">Qatar</option>
+                  <option value="REU">Réunion</option>
+                  <option value="ROU">Romania</option>
+                  <option value="RUS">Russia</option>
+                  <option value="RWA">Rwanda</option>
+                  <option value="BLM">Saint Barthélemy</option>
+                  <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KNA">Saint Kitts and Nevis</option>
+                  <option value="LCA">Saint Lucia</option>
+                  <option value="MAF">Saint Martin (French part)</option>
+                  <option value="SPM">Saint Pierre and Miquelon</option>
+                  <option value="VCT">Saint Vincent and the Grenadines</option>
+                  <option value="WSM">Samoa</option>
+                  <option value="SMR">San Marino</option>
+                  <option value="STP">Sao Tome and Principe</option>
+                  <option value="SAU">Saudi Arabia</option>
+                  <option value="SEN">Senegal</option>
+                  <option value="SRB">Serbia</option>
+                  <option value="SYC">Seychelles</option>
+                  <option value="SLE">Sierra Leone</option>
+                  <option value="SGP">Singapore</option>
+                  <option value="SXM">Sint Maarten (Dutch part)</option>
+                  <option value="SVK">Slovakia</option>
+                  <option value="SVN">Slovenia</option>
+                  <option value="SLB">Solomon Islands</option>
+                  <option value="SOM">Somalia</option>
+                  <option value="ZAF">South Africa</option>
+                  <option value="SGS">South Georgia and the South Sandwich Islands</option>
+                  <option value="SSD">South Sudan</option>
+                  <option value="ESP">Spain</option>
+                  <option value="LKA">Sri Lanka</option>
+                  <option value="SUR">Suriname</option>
+                  <option value="SJM">Svalbard and Jan Mayen</option>
+                  <option value="SWZ">Swaziland</option>
+                  <option value="SWE">Sweden</option>
+                  <option value="CHE">Switzerland</option>
+                  <option value="TWN">Taiwan</option>
+                  <option value="TJK">Tajikistan</option>
+                  <option value="TZA">Tanzania, United Republic of</option>
+                  <option value="THA">Thailand</option>
+                  <option value="TLS">Timor-Leste</option>
+                  <option value="TGO">Togo</option>
+                  <option value="TKL">Tokelau</option>
+                  <option value="TON">Tonga</option>
+                  <option value="TTO">Trinidad and Tobago</option>
+                  <option value="TUN">Tunisia</option>
+                  <option value="TUR">Turkey</option>
+                  <option value="TKM">Turkmenistan</option>
+                  <option value="TCA">Turks and Caicos Islands</option>
+                  <option value="TUV">Tuvalu</option>
+                  <option value="UGA">Uganda</option>
+                  <option value="UKR">Ukraine</option>
+                  <option value="ARE">United Arab Emirates</option>
+                  <option value="GBR">United Kingdom</option>
+                  <option value="USA" selected>United States</option>
+                  <option value="UMI">United States Minor Outlying Islands</option>
+                  <option value="URY">Uruguay</option>
+                  <option value="UZB">Uzbekistan</option>
+                  <option value="VUT">Vanuatu</option>
+                  <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                  <option value="VNM">Vietnam</option>
+                  <option value="VGB">Virgin Islands, British</option>
+                  <option value="VIR">Virgin Islands, U.S.</option>
+                  <option value="WLF">Wallis and Futuna</option>
+                  <option value="ESH">Western Sahara</option>
+                  <option value="YEM">Yemen</option>
+                  <option value="ZMB">Zambia</option>
+                  <option value="ZWE">Zimbabwe</option>
+               </select>
+               <input type="tel" placeholder="Phone">
+               <input type="checkbox" id="terms" name="terms">
+               <label for="terms">By clicking, you are agreeing to our applicable <a href="#" class="text-btn">terms</a> and <a href="#" class="text-btn">privacy policy</a>, including our <a href="#" class="text-btn">cookie policy</a>.</label>
+               <button class="filled-btn_blue">Activate Articulate 360 Trial</button>
+            </form>
+         </div>
+      </div>
+   </header>
+   <section>
+      <h2>What's Included with Articulate 360</h2>
+      <h3>All the apps and resources you need, continuously updated with new features. It includes:</h3>
+      <div class="grid-2x2">
+         <div class="grid-item">
+            <img src="images/ribbon.png" alt="Award‑Winning Authoring Apps">
+            <h4>Award‑Winning Authoring Apps</h4>
+            <sub>Storyline 360, Rise 360, and more</sub>
+         </div>
+         <div class="grid-item">
+            <img src="images/source.png" alt="7+ Million Course Assets">
+            <h4>7&plus; Million Course Assets</h4>
+            <sub>Templates, characters, photos, videos, icons, and more</sub>
+         </div>
+         <div class="grid-item">
+            <img src="images/chat-bubbles.png" alt="Project Review App">
+            <h4>Project Review App</h4>
+         </div>
+         <div class="grid-item">
+            <img src="images/graduation-cap.png" alt="Live and On-Demand Online Training">
+            <h4>Live and On-Demand Online Training</h4>
+         </div>
+      </div>
+   </section>
+   <section class="bg-gray">
+      <h2>Award-winning authoring apps</h2>
+      <h3>Articulate 360 gives you the right app for the job, always</h3>
+      <p>Articulate 360 includes both Storyline 360 and Rise 360, plus a slew of other authoring apps. Use <a href="#" class="text-btn">Storyline 360</a> to develop custom, interactive courses that work on every device—without any manual tweaking. It's powerful enough for experts, but easy for beginners to create virtually any interaction imaginable. Choose <a href="#" class="text-btn">Rise 360</a> when you want to build fully responsive courses in minutes. All you need is a web browser to quickly create beautiful courses optimized for every screen size.</p>
+      <div class="wrapper">
+         <a href="#" class="text-btn">Learn More About Storyline 360<span class="icon-chevron-right"></span></a>
+         <a href="#" class="text-btn">Learn More About Rise 360<span class="icon-chevron-right"></span></a>
+      </div>
+      <img src="images/award-winning_authoring_apps.jpeg" alt="Award-winning authoring apps">
+   </section>
+   <section>
+      <h2>7&plus; million course assets</h2>
+      <h3>Content Library 360 is an ever-growing library of course assets</h3>
+      <p>Get the course assets you need to get going quickly. Articulate 360 includes a library of 7&plus; million photos, templates, characters, videos, icons, and more.</p>
+      <a href="#" class="text-btn">Learn More<span class="icon-chevron-right"></span></a>
+   </section>
+   <section>
+      <div class="scroller">
+         <ul>
+            <li><img src="images/scroller/main_menu.jpeg" alt="Main menu layout"></li>
+            <li><img src="images/scroller/header.jpeg" alt="Header layout"></li>
+            <li><img src="images/scroller/graphic_metaphor.jpeg" alt="Graphic metaphor layout"></li>
+            <li><img src="images/scroller/welcome_layout.jpeg" alt="Welcome layout"></li>
+            <li><img src="images/scroller/timeline_layout.jpeg" alt="Timeline layout"></li>
+            <li><img src="images/scroller/50_50_layout.jpeg" alt="50 50 layout"></li>
+            <li><img src="images/scroller/70_30_layout.jpeg" alt="70 30 layout"></li>
+            <li><img src="images/scroller/welcome_layout_2.jpeg" alt="Welcome layout 2"></li>
+            <li><img src="images/scroller/scenarios_layout.jpeg" alt="Scenarios layout"></li>
+            <li><img src="images/scroller/main_menu_2.png" alt="Main menu layout 2"></li>
+         </ul>
+      </div>
+      <div class="scroller">
+         <ul>
+            <li><img src="images/scroller2/graphic_metaphor.jpeg" alt="Graphic metaphor layout"></li>
+            <li><img src="images/scroller2/major_point_layout.jpeg" alt="Major point layout"></li>
+            <li><img src="images/scroller2/media_interaction.jpeg" alt="Media interaction layout"></li>
+            <li><img src="images/scroller2/objectives.jpeg" alt="Objectives layout"></li>
+            <li><img src="images/scroller2/drag_and_drop.png" alt="Drag and drop layout"></li>
+            <li><img src="images/scroller2/objectives_layout.jpeg" alt="Objectives layout 2"></li>
+            <li><img src="images/scroller2/instructions_layout.jpeg" alt="Instructions layout"></li>
+            <li><img src="images/scroller2/70_30_layout.jpeg" alt="70 30 layout"></li>
+            <li><img src="images/scroller2/grid_layout.jpeg" alt="Grid layout"></li>
+            <li><img src="images/scroller2/50_50_layout.jpeg" alt="50 50 layout"></li>
+         </ul>
+      </div>
+   </section>
+   <section>
+      <div class="grid-2x3">
+         <div class="grid-item">
+            <div class="col">
+               <img src="images/project_review_app.jpeg" alt="Project review app">
+            </div>
+            <div class="col">
+               <img src="images/rocketman.jpeg" class="banner" alt="Project review app">
+               <h2>Project review app</h2>
+               <h3>Review 360 is a simple way to work with subject matter experts</h3>
+               <p>Speed project reviews by allowing stakeholders to view courses and provide feedback in a web browser—no app download required.</p>
+               <a href="#" class="text-btn">Learn More<span class="icon-chevron-right"></span></a>
+            </div>
+         </div>
+         <div class="grid-item">
+            <div class="col">
+               <h2>Live and On-Demand Online Training</h2>
+               <h3>Articulate 360 Training is online training that'll help you grow</h3>
+               <p>Learn how to build better courses by joining live webinars with the industry's leading e-learning gurus, including Tom Kuhlmann.</p>
+               <a href="#" class="text-btn">Learn More<span class="icon-chevron-right"></span></a>
+            </div>
+            <div class="col">
+               <img src="images/live_and_on-demand_online_training.jpeg" alt="Live and On-Demand Online Training">
+            </div>
+         </div>
+         <div class="grid-item bg-gray">
+            <div class="col">
+               <img src="images/kevin_thorn.jpeg" alt="Kevin Thorn, E-Learning Developer">
+            </div>
+            <div class="col">
+               <blockquote>"Articulate 360 is overwhelmingly impressive! Having a suite of tools all in one place will save oodles of time for project development."</blockquote>
+               <sub>Kevin Thorn, E-Learning Developer</sub>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <h2>Ready to start your free Articulate 360 trial?</h2>
+      <p>Articulate 360 is all you need to source assets, author multi-device courses, collaborate with stakeholders, and grow your e-learning skills. Try free for 60 days, no credit card required.</p>
+      <form>
+         <input type="email" placeholder="Email">
+         <div class="wrapper">
+            <button class="filled-btn_white">Continue Tour</button>
+            <button class="filled-btn_blue">Get Started</button>
+         </div>
+      </form>
+   </section>
+   <footer>
+      <div class="col">
+         <img src="images/articulate.png" alt="Articulate logo">
+      </div>
+      <div class="col">
+         <h5>Articulate 360</h5>
+         <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Storyline 360</a></li>
+            <li><a href="#">Rise 360</a></li>
+            <li><a href="#">Content Library 360</a></li>
+            <li><a href="#">Review 360</a></li>
+            <li><a href="#">Articulate 360 Training</a></li>
+            <li><a href="#">Articulate 360 Teams</a></li>
+            <li><a href="#">More<span class="icon-chevron-down"></span></a></li>
+            <li><a href="#">What's New</a></li>
+         </ul>
+      </div>
+      <div class="col">
+         <h5>Sales</h5>
+         <ul>
+            <li><a href="#">Sales Chat</a></li>
+            <li><a href="#">&plus;1 (800) 861-4880</a></li>
+            <li><a href="#">sales@articulate.com</a></li>
+            <li><a href="#">International Resellers</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Sales FAQs</a></li>
+         </ul>
+      </div>
+      <div class="col">
+         <h5>Support</h5>
+         <ul>
+            <li><a href="#">Product Support</a></li>
+            <li><a href="#">Free E-Books</a></li>
+            <li><a href="#">E-Learning Community</a></li>
+            <li><a href="#">Training Classes</a></li>
+         </ul>
+      </div>
+      <div class="col">
+         <h5>About</h5>
+         <ul>
+            <li><a href="#">About Articulate</a></li>
+            <li><a href="#">Our Values</a></li>
+            <li><a href="#">Diversity &#38; Inclusion</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+         <h5>Trust Center</h5>
+         <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">GDPR</a></li>
+         </ul>
+      </div>
+      <div class="col">
+         <h5>Connect</h5>
+         <ul>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Blog</a></li>
+         </ul>
+         <ul>
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-linkedin"></span></a></li>
+         </ul>
+      </div>
+   </footer>
+   <script src="fonts.js"></script>
+</body>
+</html>
