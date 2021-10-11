@@ -1,0 +1,197 @@
+:root {
+   --red: rgb(242, 55, 39);
+   --blue: rgb(69, 72, 244);
+   --yellow: rgb(220, 194, 81);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+}
+
+img {
+   max-width: 100%;
+}
+
+h1 {
+   font-style: italic;
+   font-weight: 900;
+   font-size: 24px;
+   letter-spacing: .05em;
+}
+
+h2 {
+   font-style: italic;
+   margin-top: .5rem;
+   margin-bottom: .5rem;
+}
+
+p {
+   font-size: 12px;
+   line-height: 1.5rem;
+   letter-spacing: -.02em;
+}
+
+.grid {
+   display: grid;
+   width: 100%;
+   grid-template-columns: 1fr;
+}
+
+.grid-item {
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.a {
+   background-image: url(images/fitness.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -1;
+   text-align: center;
+}
+
+.d {
+   background-color: #fff;
+   color: #333;
+}
+
+.e {
+   background-color: var(--blue);
+   color: #fff;
+   background-image: url(images/training_programs.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -1;
+   text-align: center;
+}
+
+.f {
+   background-image: url(images/agility_training.jpeg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -1;
+   text-align: center;
+}
+
+.g {
+   text-align: right;
+}
+
+.h {
+   background-image: url(images/get_started.jpeg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -1;
+   color: #fff;
+}
+
+.bg-black {
+   background-color: #000;
+   color: #fff;
+}
+
+.bg-red {
+   background-color: var(--red);
+   color: #fff;
+}
+
+input, textarea {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 16px;
+   outline: none;
+   border: 1px solid #fff;
+   background-color: transparent;
+}
+
+textarea {
+   resize: none;
+}
+
+span {
+   text-transform: uppercase;
+}
+
+.primary-btn {
+   border: 0px solid var(--red);
+   background-color: var(--red);
+   color: #fff;
+   display: block;
+   padding: 12px 28px;
+   font-size: 14px;
+   position: relative;
+   letter-spacing: .03em;
+   margin-left: auto;
+}
+
+.stretched-text {
+   color: var(--yellow);
+   text-transform: uppercase;
+   font-style: normal;
+   letter-spacing: .5em;
+}
+
+@media only screen and (min-width: 768px) {
+   h1 {
+      font-size: 36px;
+   }
+
+   .grid {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .a {
+      grid-column: 1/3;
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   h1 {
+      font-size: 56px;
+   }
+   
+   .grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+
+   .a {
+      grid-column: 2/4;
+      grid-row: 2/3;
+   }
+
+   .f {
+      grid-row: 2/4;
+   }
+
+   .i {
+      grid-row: 2/4;
+   }
+}
