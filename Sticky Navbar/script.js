@@ -8,14 +8,19 @@ window.addEventListener('DOMContentLoaded', () => {
             tabs[index].classList.add('active')
         })
     })
-
+    
+    const home = document.querySelector('#home');
+    home.innerHTML = `
+    <img src="images/logo.svg" alt="Lil Baghdad logo">
+    `;
+    
     const sections = document.querySelectorAll('main section');
     const images = ['image-1.webp', 'image-2.webp', 'image-3.webp', 'image-4.webp'];
     sections.forEach((section, image) => {
         const label = section.getAttribute('id');
         section.innerHTML = `
         <h3>${label}</h3>
-        <img src="images/${images[image]}" alt="${label}">
+        <img src="images/${images[image]}" alt="${label}" loading="lazy">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic in deleniti ducimus porro animi magnam beatae quam dolor veniam, eligendi quaerat dolorum omnis voluptatem.</p>
